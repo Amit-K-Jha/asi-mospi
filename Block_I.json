@@ -1,0 +1,56 @@
+{
+  "Block I: Imported input items consumed": {
+    "1.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "2.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "3.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "4.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "5.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "6. Other imported items": {
+      "Item code (NPC-MS)": "9922100",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "7. Total imports consumed (items 1 to 6)": {
+      "Item code (NPC-MS)": "9994000",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": ""
+    }
+  }
+}

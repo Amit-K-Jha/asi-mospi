@@ -1,0 +1,196 @@
+{
+  "Block H: Indigenous input items consumed": {
+    "1.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "2.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "3.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "4.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "5.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "6.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "7.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "8.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "9.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "10.": {
+      "Item description": "",
+      "Item code (NPC-MS)": "",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "11.": {
+      "Item description": "Other basic items (indigenous)",
+      "Item code (NPC-MS)": "9920100",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "12.": {
+      "Item description": "Total basic items (items 1 to 11)",
+      "Item code (NPC-MS)": "9990100",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "13.": {
+      "Item description": "Non-basic chemicals - all kinds",
+      "Item code (NPC-MS)": "9920300",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "14.": {
+      "Item description": "Packing items",
+      "Item code (NPC-MS)": "9990800",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "15.": {
+      "Item description": "Electricity own generated",
+      "Item code (NPC-MS)": "9990400",
+      "Unit of quantity": "KWH",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "16.": {
+      "Item description": "Electricity purchased & consumed",
+      "Item code (NPC-MS)": "9990500",
+      "Unit of quantity": "KWH",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "17.": {
+      "Item description": "Petrol, diesel, oil, lubricants consumed",
+      "Item code (NPC-MS)": "9990600",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "18.": {
+      "Item description": "Coal consumed",
+      "Item code (NPC-MS)": "9990700",
+      "Unit of quantity": "Tonne",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "19.": {
+      "Item description": "Gas consumed",
+      "Item code (NPC-MS)": "9990900",
+      "Unit of quantity": "KG",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "20.": {
+      "Item description": "Other fuel consumed",
+      "Item code (NPC-MS)": "9920400",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "21.": {
+      "Item description": "Consumable store",
+      "Item code (NPC-MS)": "9922000",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "22.": {
+      "Item description": "Total non-basic items (items 13 to 21)",
+      "Item code (NPC-MS)": "9992000",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "23.": {
+      "Item description": "Total inputs (items 12 + 22)",
+      "Item code (NPC-MS)": "9993000",
+      "Unit of quantity": "",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    },
+    "24.": {
+      "Item description": "Any additional requirement of electricity (unmet demand)",
+      "Item code (NPC-MS)": "9999999",
+      "Unit of quantity": "KWH",
+      "Quantity consumed": "",
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
+    }
+  }
+}

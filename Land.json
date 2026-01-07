@@ -1,0 +1,46 @@
+{
+    "Type of Assets": {
+      "Freehold Land": {
+        "Gross value (Rs.)": {
+          "Opening as on (3)": "",
+          "Addition during the year": {
+            "Due to revaluation (4)": "",
+            "Actual additions (5)": ""
+          },
+          "Deduction & adjustment during the year(6)": "",
+          "Closing as on (cols. 3+4+5-6) (7)": ""
+        },
+        "Depreciation (Rs.)": {
+          "Up to year beginning (8)": "",
+          "Provided during the year (9)": "",
+          "Adjustment for sold/ discarded during the year (10)": "",
+          "Up to year end (cols.8+9 -10) (11)": ""
+        },
+        "Net value (Rs.)": {
+          "Opening as on ----- (cols. 3-8) (12)": "",
+          "Closing as on ------ (cols. 7- 11) (13)": ""
+        }
+      },
+      "Leasehold Land": {
+        "Gross value (Rs.)": {
+          "Opening as on (3)": "",
+          "Addition during the year": {
+            "Due to revaluation (4)": "",
+            "Actual additions (5)": ""
+          },
+          "Deduction & adjustment during the year(6)": "",
+          "Closing as on (cols. 3+4+5-6) (7)": ""
+        },
+        "Depreciation (Rs.)": {
+          "Up to year beginning (8)": "",
+          "Provided during the year (9)": "",
+          "Adjustment for sold/ discarded during the year (10)": "",
+          "Up to year end (cols.8+9 -10) (11)": ""
+        },
+        "Net value (Rs.)": {
+          "Opening as on ----- (cols. 3-8) (12)": "",
+          "Closing as on ------ (cols. 7- 11) (13)": ""
+        }
+      }
+    }
+}

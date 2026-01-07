@@ -1,0 +1,16 @@
+{
+  "Block A: Identification particulars (for official use)": {
+    "1. Schedule Despatch (DSL) No.": "",
+    "2. PSL No.": "",
+    "3. Scheme code (Census-1, Sample-2)": "",
+    "4. Industry code as per frame (4-digit level of NIC-2008)": "",
+    "5. Industry code as per return (5-digit level of NIC-2008)": "",
+    "6. Description of Industry": "",
+    "7. State Code": "",
+    "8. District Code": "",
+    "9. Sector (Rural-1, Urban-2)": "",
+    "10. RO/SRO code": "",
+    "11. No. of Units": "",
+    "12. Status of Unit (Code)": ""
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "Block D: WORKING CAPITAL AND LOANS": {
+    "Raw Materials & Components and Packing materials (1)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Fuels &Lubricants (2)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Spares, Stores &others (3)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Sub-total (items 1 to 3) (4)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Semi-finished goods/work in progress (5)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Finished goods (6)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Total inventory ( items 4 to 6) (7)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Cash in Hand &at Bank (8)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Sundry Debtors (9)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Other current assets (10)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Total current assets(items 7 to 10) (11)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Sundry Creditors (12)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Over draft, cash credit, other short-term loan from banks & other financial institutions (13)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Other current liabilities (14)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Total current liabilities (items 12 to 14) (15)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Working Capital (item 11-item 15)* (16)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    },
+    "Outstanding loans (excluding interest but including deposits)** (17)": {
+      "Opening (Rs.)": "",
+      "Closing (Rs.)": ""
+    }
+  }
+}
