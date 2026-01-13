@@ -62,70 +62,40 @@ class E_BlockEntityExtractor:
  
     def _create_agent(self):
         return Agent(
-            role="ASI Block E Labour Cost Extractor",
-            goal=(
-            "Extract ONLY Block E Part B labour cost values (Items 11 and 12) "
-            "from markdown content and populate the predefined JSON structure."
-            ),
+            role="Markdown-to-JSON Data Extractor",
+            goal="Accurately extract financial values from a structured Markdown table and populate the corresponding fields in a predefined JSON format.",
             backstory=(
-            "You are a specialized ASI data extraction bot for Block E. "
-            "You strictly follow ASI Schedule rules. "
-            "You do NOT calculate, infer, aggregate, or estimate values. "
-            "You ONLY copy exact values explicitly stated in the markdown. "
-            "You NEVER populate fields outside the allowed scope."
+                "You are a data extraction bot. You do not calculate sums. "
+                "Your only job is to find the value form the P&L statements in markdown conetent associated with a specific keywords . "
+                "and return it in a structured JSON format."
             ),
             verbose=True,
             allow_delegation=False,
             llm=self.llm,
         )
-
-
+ 
     def _create_task(self, agent):
-
+        # We pass the list of items to the LLM to look for
+        all_keywords = self.bonus_keywords + self.pf_keywords
+ 
         description = (
-            "You are given:\n"
-            "- A JSON structure for **Block E: Employment & Labour Cost** with empty fields.\n"
-            "- Markdown content extracted from Balance Sheet / Profit & Loss statements.\n\n"
-
-        "YOUR TASK:\n"
-        "Populate ONLY the following fields:\n"
-        "• Block E → Part B → Item 11: Bonus (in Rs.)\n"
-        "• Block E → Part B → Item 12: Contribution to provident & other funds (in Rs.)\n\n"
-
-        "ABSOLUTE RULES (NON-NEGOTIABLE):\n"
-        "1. You are STRICTLY ALLOWED to fill ONLY Item 11 and Item 12.\n"
-        "2. ALL other fields in the JSON MUST remain EMPTY, even if values are visible.\n"
-        "3. Extract values ONLY if they appear explicitly in the markdown.\n"
-        "4. Copy values EXACTLY as written — do NOT remove commas, symbols, or decimals.\n"
-        "5. DO NOT calculate totals, sums, or aggregates.\n"
-        "6. DO NOT infer values from related fields.\n"
-        "7. DO NOT add, rename, remove, or reorder any JSON keys.\n"
-        "8. If a value is NOT found explicitly, LEAVE THE FIELD EMPTY.\n"
-        "9. Return ONLY the final JSON — no explanation, no comments.\n\n"
-
-        "ITEM DEFINITIONS:\n"
-        "• Item 11 (Bonus): Include ONLY values explicitly labelled as "
-        "Bonus / Ex-gratia / Festival Bonus / Year-end Bonus.\n"
-        "• Item 12 (Provident & other funds): Include ONLY employer contributions "
-        "such as PF / EPF / ESI / ESIC / Gratuity / Superannuation.\n\n"
-
-        "INVALID SOURCES:\n"
-        "• Derived totals\n"
-        "• Wage or salary figures\n"
-        "• Incentives or allowances\n"
-        "• Employee deductions unless clearly marked as employer contribution\n\n"
-
-        "MARKDOWN CONTENT:\n"
-        "{content}\n\n"
-
-        "OUTPUT REQUIREMENT:\n"
-        "Return ONLY the completed JSON structure exactly matching the input schema."
-    )
-
+            f"Analyze the provided Markdown content.\n"
+            f"Search for the following line items in P&L statements of markdown content: {', '.join(all_keywords)}.\n"
+            "**Instructions:**\n"
+            "1. For each item found, extract the value from the **Current Year** column.\n"
+            "2. If an item is NOT found, do not include it or set it to '0'.\n"
+            "3. Do NOT attempt to sum the values. Just extract them.\n"
+            "4. Return a valid JSON object where keys are the exact Item Names and values are the numbers (as strings).\n"
+            "5. Remove commas from numbers (e.g. '1,500' -> '1500').\n\n"
+            "**Markdown Content:**\n{content}\n\n"
+            "**Expected JSON Output Format:**\n"
+            "{ \"Bonus Paid\": \"10000\", \"Provident Fund\": \"500.50\", ... }"
+        )
+ 
         return Task(
             description=description,
-            expected_output="{json_input}",
-            agent=agent,
+            expected_output='JSON object containing extracted values for found keys.',
+            agent=agent
         )
  
     def _safe_float(self, value):
