@@ -1,11 +1,11 @@
 {
   "Block B: Particulars of the factory": {
-    "1. Name and address of the Industrial undertaking": {
-      "1.1 Vill./Town": "",
-      "1.2 District name": "",
-      "1.3 State name": "",
-      "1.4 PIN Code": ""
-    },
+    "1. Name and address of the Industrial undertaking": "",
+    "1.1 Vill/Town": "",
+    "1.2 District name": "",
+    "1.3 State name": "",
+    "1.4 PIN Code": "",
+
     "2. Type of organisation (code)": "",
     "3. Corporate Identification Number (CIN)": "",
     "4. Whether the unit has ISO Certification, 14000 Series (yes-1, no-2)": "",
@@ -14,13 +14,14 @@
     "6. Accounting year (to)": "",
     "7. Number of months of operation": "",
     "8. Whether share capital includes share of foreign entities (yes-1, no-2)": "",
-    "9. Any R&D unit in the factory (1=Yes DST/DBT, 2=Yes other, 3=No)": "",
-    "10. Details of contact person": {
-      "i) Name & designation": "",
-      "ii) Telephone (with STD code)": "",
-      "iii) FAX No.": "",
-      "iv) E-mail": ""
-    },
+    "9. Any R&D unit in the factory (yes & registered with DST/DBT - 1, yes & registered with others - 2, no - 3)": "",
+
+    "10. Details of contact person": "",
+    "10.i Name & designation": "",
+    "10.ii Telephone (with STD code)": "",
+    "10.iii FAX No.": "",
+    "10.iv E-mail": "",
+
     "11. Whether the unit offered any formal training (yes-1, no-2)": ""
   }
 }
