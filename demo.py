@@ -316,10 +316,6 @@ async def process_pdf(pdf: UploadFile = File(...)):
 
         block_i_dict = block_i_json.get("Block I: Imported input items consumed", {})
 
-        df_i = pd.DataFrame(
-            [{"Field": key, "Value": value} for key, value in block_i_dict.items()]
-        )
-        
         # --- Block J Processing ---
         try:
             block_j_output = os.path.join(output_dir, "output_Block_J.json")
@@ -427,6 +423,34 @@ async def process_pdf(pdf: UploadFile = File(...)):
                         else:
                             return ""
                     return dictionary if isinstance(dictionary, str) else ""
+
+                
+                # --- BLOCK B PROCESSING (ASI Schedule accurate, display-only) ---
+
+                rows_b = []
+
+                block_b_dict = block_b_json.get("Block B: Particulars of the factory", {})
+
+                for key, value in block_b_dict.items():
+                    key = key.strip()
+
+                    # Split ONLY on first space to preserve ASI numbering (1, 1.1, 10.i)
+                    if " " in key:
+                        item_no, particulars = key.split(" ", 1)
+                    else:
+                        item_no = key
+                        particulars = ""
+
+                    rows_b.append({
+                        "Item No.": item_no,
+                        "Particulars": particulars,
+                        "Value": value
+                    })
+
+                df_b = pd.DataFrame(
+                    rows_b,
+                    columns=["Item No.", "Particulars", "Value"]
+                )
 
                 
                 
@@ -572,6 +596,26 @@ async def process_pdf(pdf: UploadFile = File(...)):
                             rows_h.append(row)
 
                     df_h = pd.DataFrame(rows_h)
+
+                # --- Process Block I ---
+                rows_i = []
+
+                for item_key, item_data in block_i_dict.items():
+                    item_number = item_key.rstrip('.')
+
+                    if isinstance(item_data, dict):
+                        row = {
+                            "Sl. No.": item_number,
+                            "Item description": item_data.get("Item description", ""),
+                            "Item code (NPC-MS)": item_data.get("Item code (NPC-MS)", ""),
+                            "Unit of quantity": item_data.get("Unit of quantity", ""),
+                            "Quantity consumed": item_data.get("Quantity consumed", ""),
+                            "Purchase value (Rs.)": item_data.get("Purchase value (Rs.)", ""),
+                            "Rate per unit (Rs.)": item_data.get("Rate per unit (Rs.)", "")
+                        }
+                        rows_i.append(row)
+                    df_i = pd.DataFrame(rows_i)
+
 
                 # --- Process Block J ---
                 if block_j_output and os.path.exists(block_j_output):
