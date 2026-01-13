@@ -40,17 +40,21 @@
       "Purchase value (Rs.)": "",
       "Rate per unit (Rs.)": ""
     },
-    "6. Other imported items": {
+    "6.": {
+      "Item description": "Other imported items",
       "Item code (NPC-MS)": "9922100",
       "Unit of quantity": "",
       "Quantity consumed": "",
       "Purchase value (Rs.)": "",
       "Rate per unit (Rs.)": ""
     },
-    "7. Total imports consumed (items 1 to 6)": {
+    "7.": {
+      "Item description": "Total imports (items 1 to 6)",
       "Item code (NPC-MS)": "9994000",
+      "Unit of quantity": "",
       "Quantity consumed": "",
-      "Purchase value (Rs.)": ""
+      "Purchase value (Rs.)": "",
+      "Rate per unit (Rs.)": ""
     }
   }
 }
